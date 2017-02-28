@@ -1,7 +1,9 @@
-# baystation12
+# Solaris 13
 
-[Website](http://baystation12.net/) - [Code](http://github.com/Baystation12/Baystation12/) - [IRC](irc://irc.sorcery.net/#codershuttle)
+[Website](https://solaris13.net/) - [Code](https://github.com/solarisstation/Baystation12)
 
+
+Based on Baystation 12 codebase - [Code](http://github.com/Baystation12/Baystation12)
 ---
 
 ### LICENSE
