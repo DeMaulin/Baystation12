@@ -6,7 +6,7 @@
 	icon = 'icons/obj/drinks_port.dmi'
 	icon_state = "glass_empty"
 	amount_per_transfer_from_this = 5
-	volume = 25
+	volume = 30
 
 	on_reagent_change()
 		if (reagents.reagent_list.len > 0)
