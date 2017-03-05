@@ -82,6 +82,10 @@
 	if(!access_to_check) // No required_access, allow it.
 		return 1
 
+	// Admin override - allows operation of any computer as aghosted admin, as if you had any required access.
+	if(isghost(user) && check_rights(R_ADMIN, 0, user))
+		return 1
+
 	if(!istype(user))
 		return 0
 
@@ -182,10 +186,10 @@
 /datum/topic_manager/program/Topic(href, href_list)
 	return program && program.Topic(href, href_list)
 
-/datum/computer_file/program/proc/apply_visual(mob/M)
+/datum/computer_file/program/apply_visual(mob/M)
 	if(NM)
 		NM.apply_visual(M)
 
-/datum/computer_file/program/proc/remove_visual(mob/M)
+/datum/computer_file/program/remove_visual(mob/M)
 	if(NM)
 		NM.remove_visual(M)
