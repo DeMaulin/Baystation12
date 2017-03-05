@@ -12,7 +12,7 @@
 
 	action_button_name = "Toggle Flashlight"
 	var/on = 0
-	var/brightness_on = 4 //luminosity when on
+	var/brightness_on = 6 //luminosity when on
 
 /obj/item/device/flashlight/initialize()
 	..()
@@ -158,8 +158,8 @@
 	name = "flare"
 	desc = "A red standard-issue flare. There are instructions on the side reading 'pull cord, make light'."
 	w_class = ITEM_SIZE_TINY
-	brightness_on = 8 // Pretty bright.
-	light_power = 3
+	brightness_on = 4 // Pretty bright.
+	light_power = 2
 	light_color = "#e58775"
 	icon_state = "flare"
 	item_state = "flare"

@@ -59,7 +59,7 @@ var/global/list/image/ghost_sightless_images = list() //this is a list of images
 			mind = new /datum/mind(key)
 			mind.current = src
 	if(!T)	T = pick(latejoin | latejoin_cryo | latejoin_gateway)			//Safety in case we cannot find the body's position
-	forceMove(T)
+	forceMoveOld(T)
 
 	if(!name)							//To prevent nameless ghosts
 		name = capitalize(pick(first_names_male)) + " " + capitalize(pick(last_names))
@@ -286,7 +286,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 		to_chat(src, "<span class='warning'>The target location is holy grounds!</span>")
 		return
 	stop_following()
-	forceMove(target_turf)
+	forceMoveOld(target_turf)
 
 // This is the ghost's follow verb with an argument
 /mob/observer/ghost/proc/ManualFollow(var/atom/movable/target)

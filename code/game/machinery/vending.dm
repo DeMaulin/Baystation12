@@ -634,7 +634,7 @@
 					/obj/item/weapon/reagent_containers/food/drinks/cans/sodawater = 15,
 					/obj/item/weapon/reagent_containers/food/drinks/flask/barflask = 5,
 					/obj/item/weapon/reagent_containers/food/drinks/flask/vacuumflask = 5,
-					/obj/item/weapon/reagent_containers/food/drinks/drinkingglass = 10,
+					/obj/item/weapon/reagent_containers/food/drinks/drinkingglass = 10, //ported from TC
 					/obj/item/weapon/reagent_containers/food/drinks/glass2/square = 10,
 					/obj/item/weapon/reagent_containers/food/drinks/glass2/rocks = 10,
 					/obj/item/weapon/reagent_containers/food/drinks/glass2/shake = 10,
@@ -829,6 +829,7 @@
 	desc = "Wall-mounted Medical Equipment dispenser."
 	product_ads = "Go save some lives!;The best stuff for your medbay.;Only the finest tools.;Natural chemicals!;This stuff saves lives.;Don't you want some?"
 	icon_state = "wallmed"
+	light_color = "#e6fff2"
 	icon_deny = "wallmed-deny"
 	density = 0 //It is wall-mounted, and thus, not dense. --Superxpdude
 	products = list(/obj/item/stack/medical/bruise_pack = 2,/obj/item/stack/medical/ointment = 2,/obj/item/weapon/reagent_containers/hypospray/autoinjector = 4)
@@ -839,6 +840,7 @@
 	desc = "Wall-mounted Medical Equipment dispenser."
 	product_ads = "Go save some lives!;The best stuff for your medbay.;Only the finest tools.;Natural chemicals!;This stuff saves lives.;Don't you want some?"
 	icon_state = "wallmed"
+	light_color = "#e6fff2"
 	icon_deny = "wallmed-deny"
 	density = 0 //It is wall-mounted, and thus, not dense. --Superxpdude
 	products = list(/obj/item/weapon/reagent_containers/hypospray/autoinjector = 5,/obj/item/weapon/reagent_containers/syringe/antitoxin = 1,/obj/item/stack/medical/bruise_pack = 3,

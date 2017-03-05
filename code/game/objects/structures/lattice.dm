@@ -19,6 +19,7 @@
 	for(var/obj/structure/lattice/LAT in src.loc)
 		if(LAT != src)
 			qdel(LAT)
+	//set_light(1.5)
 	icon = 'icons/obj/smoothlattice.dmi'
 	icon_state = "latticeblank"
 	updateOverlays()

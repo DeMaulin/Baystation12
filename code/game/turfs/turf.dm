@@ -25,7 +25,7 @@
 	var/icon_old = null
 	var/pathweight = 1          // How much does it cost to pathfind over this turf?
 	var/blessed = 0             // Has the turf been blessed?
-	var/dynamic_lighting = 1    // Does the turf use dynamic lighting?
+	//var/dynamic_lighting = 1    // Does the turf use dynamic lighting?
 
 	var/list/decals
 
@@ -37,10 +37,10 @@
 			return
 	turfs |= src
 
-	if(dynamic_lighting)
+	/*if(dynamic_lighting)
 		luminosity = 0
 	else
-		luminosity = 1
+		luminosity = 1*/
 
 /turf/proc/initialize()
 	return

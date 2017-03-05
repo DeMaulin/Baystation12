@@ -56,7 +56,7 @@
 	flags = AREA_EXTERNAL
 	requires_power = 1
 	always_unpowered = 1
-	lighting_use_dynamic = 0
+	dynamic_lighting = 0
 	base_turf = /turf/space
 
 /area/solar/auxstarboard
@@ -96,7 +96,7 @@
 /area/holodeck
 	name = "\improper Holodeck"
 	icon_state = "Holodeck"
-	lighting_use_dynamic = 0
+	dynamic_lighting = 0
 	sound_env = LARGE_ENCLOSED
 
 /area/holodeck/alphadeck
@@ -476,7 +476,7 @@
 /area/acting
 	name = "\improper Centcom Acting Guild"
 	icon_state = "red"
-	lighting_use_dynamic = 0
+	dynamic_lighting = 0
 	requires_power = 0
 
 /area/acting/backstage
@@ -484,7 +484,7 @@
 
 /area/acting/stage
 	name = "\improper Stage"
-	lighting_use_dynamic = 1
+	dynamic_lighting = 1
 	icon_state = "yellow"
 
 // Thunderdome
@@ -493,7 +493,7 @@
 	name = "\improper Thunderdome"
 	icon_state = "thunder"
 	requires_power = 0
-	lighting_use_dynamic = 0
+	dynamic_lighting = 0
 	sound_env = ARENA
 
 /area/tdome/tdome1

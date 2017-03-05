@@ -17,10 +17,10 @@
 		power_equip = 0
 		power_environ = 0
 
-	if(lighting_use_dynamic)
+	/*if(lighting_use_dynamic) ~FOR THE GUNLIGHT!
 		luminosity = 0
 	else
-		luminosity = 1
+		luminosity = 1*/
 
 	name = replacetextEx(name, "\improper", "")
 

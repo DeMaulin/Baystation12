@@ -368,7 +368,7 @@
 			var/turf_brightness = 1
 			var/turf/T = get_turf(H)
 			if(T && T.lighting_overlay)
-				turf_brightness = min(1, (T.lighting_overlay.lum_b + T.lighting_overlay.lum_g + T.lighting_overlay.lum_r) / 3)
+				turf_brightness = min(1, (round((T.get_lumcount()*10)-5)) / 3) //~DUNNO IF IT WILL WORK
 			if(turf_brightness < 0.33)
 				light = 0
 			else

@@ -13,7 +13,7 @@
 /turf/space/New()
 	if((icon_state == "0") && (!keep_sprite))
 		icon_state = "[((x + y) ^ ~(x * y)) % 25]"
-	update_starlight()
+	//update_starlight()
 	..()
 
 /turf/space/initialize()
@@ -39,12 +39,13 @@
 	return locate(/obj/structure/lattice, src) //counts as solid structure if it has a lattice
 
 /turf/space/proc/update_starlight()
-	if(!config.starlight)
+	return
+	/*if(!config.starlight)
 		return
 	if(locate(/turf/simulated) in orange(src,1))
 		set_light(config.starlight)
 	else
-		set_light(0)
+		set_light(0)*/
 
 /turf/space/attackby(obj/item/C as obj, mob/user as mob)
 

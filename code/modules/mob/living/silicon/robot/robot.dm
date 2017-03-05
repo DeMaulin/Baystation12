@@ -367,6 +367,10 @@
 
 	lights_on = !lights_on
 	to_chat(usr, "You [lights_on ? "enable" : "disable"] your integrated light.")
+	if(lights_on)
+		set_light(6)
+	else
+		set_light(0)
 	update_robot_light()
 
 /mob/living/silicon/robot/verb/self_diagnosis_verb()

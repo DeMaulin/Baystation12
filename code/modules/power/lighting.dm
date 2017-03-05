@@ -162,8 +162,8 @@ var/global/list/light_type_cache = list()
 	var/datum/effect/effect/system/spark_spread/s = new /datum/effect/effect/system/spark_spread
 
 	//default lighting - these are obtained from light_type
-	var/brightness_range
-	var/brightness_power
+	var/brightness_range = 7
+	var/brightness_power = 2
 	var/brightness_color
 	var/list/lighting_modes
 
@@ -173,19 +173,31 @@ var/global/list/light_type_cache = list()
 /obj/machinery/light/small
 	icon_state = "bulb1"
 	base_state = "bulb"
+	brightness_range = 4
+	brightness_power = 2
+	brightness_color = "#a0a080"
 	desc = "A small lighting fixture."
 	light_type = /obj/item/weapon/light/bulb
 	construct_type = /obj/machinery/light_construct/small
 
 /obj/machinery/light/small/emergency
+	brightness_range = 6
+	brightness_power = 2
+	brightness_color = "#da0205"
 	light_type = /obj/item/weapon/light/bulb/red
 
 /obj/machinery/light/small/red
+	brightness_range = 5
+	brightness_power = 1
+	brightness_color = "#da0205"
 	light_type = /obj/item/weapon/light/bulb/red
 
 /obj/machinery/light/spot
 	name = "spotlight"
 	light_type = /obj/item/weapon/light/tube/large
+	brightness_range = 12
+	brightness_power = 4
+	brightness_color = "#da0205"
 
 // create a new lighting fixture
 /obj/machinery/light/New(atom/newloc, obj/machinery/light_construct/construct = null)
