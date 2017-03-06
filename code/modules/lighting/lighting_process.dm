@@ -41,5 +41,5 @@
 		L.update_overlay()
 		L.needs_update = FALSE
 
-	lighting_update_overlays.Cut()
+	lighting_update_overlays.Cut()//undefined proc /atom/movable/lighting_overlay/Cut()
 	lighting_update_lights.Cut()

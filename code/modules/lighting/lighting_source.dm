@@ -35,7 +35,7 @@
 	if(!source_atom.light_sources)
 		source_atom.light_sources = list()
 
-	source_atom.light_sources= src // Add us to the lights of our owner.
+	source_atom.light_sources = src // Add us to the lights of our owner.
 	top_atom = top
 	if(top_atom != source_atom)
 		if(!top.light_sources)
@@ -91,7 +91,7 @@
 #define effect_update(BYOND)            \
 	if(!needs_update)                   \
 	{                                   \
-		lighting_update_lights= src;  \
+		lighting_update_lights += src;  \
 		needs_update            = TRUE; \
 	}
 #endif
@@ -248,7 +248,7 @@
 			continue
 
 		var/turf/T = A
-		if(T.affecting_lights)
+		if(T.affecting_lights) //made it for cabels
 			T.affecting_lights -= src
 
 	affecting_turfs.Cut()
