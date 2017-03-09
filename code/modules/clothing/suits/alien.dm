@@ -32,11 +32,21 @@
 //Resomi clothing
 
 /obj/item/clothing/suit/storage/toggle/Resomicoat
- 	name = "small coat"
+ 	name = "small black coat"
  	desc = "A coat that seems too small to fit a human."
  	icon_state = "resomicoat"
  	item_state = "resomicoat"
  	icon_open = "resomicoat_open"
  	icon_closed = "resomicoat"
+ 	body_parts_covered = UPPER_TORSO|ARMS|LOWER_TORSO|LEGS
+ 	species_restricted = list("Resomi")
+
+/obj/item/clothing/suit/storage/toggle/Resomicoatwh
+ 	name = "small white coat"
+ 	desc = "A coat that seems too small to fit a human."
+ 	icon_state = "resomicoatwh"
+ 	item_state = "resomicoatwh"
+ 	icon_open = "resomicoatwh_open"
+ 	icon_closed = "resomicoatwh"
  	body_parts_covered = UPPER_TORSO|ARMS|LOWER_TORSO|LEGS
  	species_restricted = list("Resomi")

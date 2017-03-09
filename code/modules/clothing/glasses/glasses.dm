@@ -359,3 +359,9 @@
 	desc = "A set of implantable lenses designed to augment your vision."
 	icon_state = "thermalimplants"
 	item_state = "syringe_kit"
+
+/obj/item/clothing/glasses/regular/scanners/aerogel
+	name = "Aerogel Glasses"
+	desc = "A very oddly shaped pair of goggles with bits of wire poking out the sides. A soft humming sound emanates from it. This one looks very hightech!"
+	icon_state = "aerogel"
+	light_protection = 7
