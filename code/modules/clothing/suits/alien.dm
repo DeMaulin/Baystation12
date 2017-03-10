@@ -43,7 +43,7 @@
 
 /obj/item/clothing/suit/storage/toggle/Resomicoatwh
  	name = "small white coat"
- 	desc = "A coat that seems too small to fit a human."
+ 	desc = "A coat made via synthetic materials and seems too small to fit a human. Have orange inserts for looking more futuristic."
  	icon_state = "resomicoatwh"
  	item_state = "resomicoatwh"
  	icon_open = "resomicoatwh_open"

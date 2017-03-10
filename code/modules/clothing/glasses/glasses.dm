@@ -360,8 +360,10 @@
 	icon_state = "thermalimplants"
 	item_state = "syringe_kit"
 
-/obj/item/clothing/glasses/regular/scanners/aerogel
-	name = "Aerogel Glasses"
-	desc = "A very oddly shaped pair of goggles with bits of wire poking out the sides. A soft humming sound emanates from it. This one looks very hightech!"
+/obj/item/clothing/glasses/aerogel
+	desc = "A hi-tech looking glasses made via hard aerogel and steel. Have a simple HuD and light-blocking tech. Looks awesome!"
+	name = "aergogel glasses"
 	icon_state = "aerogel"
-	light_protection = 7
+	item_state = "aerogel"
+	darkness_view = -1
+	flash_protection = FLASH_PROTECTION_MODERATE
